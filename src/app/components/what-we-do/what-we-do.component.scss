@@ -1,0 +1,14 @@
+.menu-container {
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch; /* for smooth scrolling on iOS */
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+  }
+  .menu-container::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+  }
+  .menu-items {
+    display: inline-block;
+    padding: 0 10px;
+  }

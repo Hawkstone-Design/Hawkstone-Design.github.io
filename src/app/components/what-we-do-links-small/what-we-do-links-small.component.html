@@ -1,0 +1,27 @@
+<div class="menu-container">
+    <div class="menu-items">
+        <ul class="m-0 list-inline">
+            <li (click)="onLinkClicked('WebOrdering')" class="list-inline-item p-3 link" [ngClass]="isActive('WebOrdering')? 'active':'inactive'">
+                <h3 class="fs-5 fw-bold">Web Ordering</h3>
+            </li>
+            <li (click)="onLinkClicked('OrderProcessing')" class="list-inline-item p-3 link" [ngClass]="isActive('OrderProcessing')? 'active':'inactive'">
+                <h3 class="fs-5 fw-bold">Order Processing</h3>
+            </li>
+            <li (click)="onLinkClicked('Wholesale')"  class="list-inline-item p-3 link" [ngClass]="isActive('Wholesale')? 'active':'inactive'">
+                <h3 class="fs-5 fw-bold">Wholesale Ordering</h3>
+            </li>
+            <li (click)="onLinkClicked('LensDesign')"  class="list-inline-item p-3 link" [ngClass]="isActive('LensDesign')? 'active':'inactive'">
+                <h3 class="fs-5 fw-bold">Lens Design</h3>
+            </li>
+            <li (click)="onLinkClicked('Manufacturing')"  class="list-inline-item p-3 link" [ngClass]="isActive('Manufacturing')? 'active':'inactive'">
+                <h3 class="fs-5 fw-bold">Manufacturing Software</h3>
+            </li>
+            <li (click)="onLinkClicked('FrameOrdering')"  class="list-inline-item p-3 link" [ngClass]="isActive('FrameOrdering')? 'active':'inactive'">
+                <h3 class="fs-5 fw-bold">Frame Ordering</h3>
+            </li>
+            <li (click)="onLinkClicked('DigitalTwin')"  class="list-inline-item p-3 link" [ngClass]="isActive('DigitalTwin')? 'active':'inactive'">
+                <h3 class="fs-5 fw-bold">Digital Twins</h3>
+            </li>
+        </ul>
+    </div>
+</div>

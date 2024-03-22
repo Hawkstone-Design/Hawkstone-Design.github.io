@@ -1,0 +1,38 @@
+
+
+<div class="container-fluid">
+  <div class="row d-none d-lg-flex">
+    <!-- Our Software -->
+    <div style="text-align: right;" class="col-md-4 d-flex justify-content-end p-5">
+      <h1 class="display-3 fw-bold d-flex justify-content-center">Our Software</h1>
+    </div>
+    <div class="col-md-8 text-dark p-5" style="background: #f8f8f8;text-align:left;">
+      <h1 class="display-3 fw-bold d-flex justify-content-start">Heading</h1>
+    </div>
+  </div>
+
+  <!-- Menu for small screens -->
+  <div class="row d-flex d-lg-none">
+    <div class="col-12">
+      <app-what-we-do-links [activeLink]="visibleSection" (onSectionSelected)="setVisibleSection($event)" [smallScreenMode]="true"></app-what-we-do-links>
+    </div>
+  </div>
+
+  <!-- Description -->
+  <div class="row">
+    <!-- Menu for medium and above screens -->
+    <div class="col-md-4 d-none d-lg-flex justify-content-start p-5">
+      <app-what-we-do-links [activeLink]="visibleSection" (onSectionSelected)="setVisibleSection($event)" [smallScreenMode]="false"></app-what-we-do-links>
+    </div>
+    <!-- Description -->
+    <div class="p-5 col-lg-8 text-dark" style="background: #f8f8f8">
+      <app-web-ordering *ngIf="isSectionVisible('WebOrdering')"></app-web-ordering>
+      <app-order-processing *ngIf="isSectionVisible('OrderProcessing')"></app-order-processing>
+      <app-wholesale-ordering *ngIf="isSectionVisible('Wholesale')"></app-wholesale-ordering>
+      <app-lens-design *ngIf="isSectionVisible('LensDesign')"></app-lens-design>
+      <app-manufacturing *ngIf="isSectionVisible('Manufacturing')"></app-manufacturing>
+      <app-digital-twin *ngIf="isSectionVisible('DigitalTwin')"></app-digital-twin>
+      <app-frame-ordering *ngIf="isSectionVisible('FrameOrdering')"></app-frame-ordering>
+    </div>
+  </div>
+</div>

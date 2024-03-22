@@ -1,0 +1,2 @@
+<app-what-we-do-links-small [activeLink]="activeLink"  (onSectionSelected)="onLinkClicked($event)" *ngIf="smallScreenMode"></app-what-we-do-links-small>
+<app-what-we-do-links-large [activeLink]="activeLink" (onSectionSelected)="onLinkClicked($event)" *ngIf="!smallScreenMode"></app-what-we-do-links-large>
